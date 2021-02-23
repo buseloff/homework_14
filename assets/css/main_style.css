@@ -1,0 +1,41 @@
+* {
+  margin: 0 auto;
+}
+
+a {
+  //text-align: left;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+a:visited {
+  color: gray;
+}
+a:active {
+  color: red;
+  border: 4px solid red;
+}
+
+a:link {
+  color: green;
+}
+
+a:hover {
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+p,
+pre {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+body {
+  background-color: rgba(213, 241, 241, 0.9);
+}

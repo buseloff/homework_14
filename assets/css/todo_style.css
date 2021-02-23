@@ -1,0 +1,100 @@
+/*Стиль контейнера для задач*/
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: lightgray;
+  border-radius: 10px;
+}
+
+/*Стиль заголовка*/
+h2 {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 20px;
+  font-family: Lato, sans-serif;
+}
+
+/*Стиль поля ввода*/
+input[name="task"] {
+  border: 4px solid black;
+  font-size: 18px;
+  line-height: 18px;
+  height: 24px;
+  font-family: Lato, sans-serif;
+  margin-left: 20px;
+  color: white;
+  border-radius: 6px;
+}
+
+/*Стиль поля ввода при помещении в него курсора*/
+input[name="task"]:focus {
+  color: lightskyblue;
+}
+
+/*Стиль кнопок*/
+#createTaskButton,
+#deleteTaskButton {
+  display: inline-block;
+  background-color: darkslategray;
+  color: white;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+/*Стиль кнопок при наведении */
+#createTaskButton:hover,
+#deleteTaskButton:hover {
+  color: lightskyblue;
+}
+
+/*Стиль для отдельной задачи*/
+.taskItem {
+  padding: 12px;
+  text-align: left;
+}
+
+/*Стиль для даты создания задач*/
+.timeElement {
+  color: blue;
+}
+
+/*Стиль для элементов списка*/
+#tasksList > li {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 720px;
+  background-color: rgb(253, 253, 253);
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin: 10px 10px;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+}
+
+/*Стиль для четных элементов списка*/
+#tasksList > li:nth-child(odd) {
+  background-color: #f1e3e3;
+}
+
+/*Стиль для невалидного поля ввода*/
+.invalid_style {
+  background-color: red;
+}
+
+/*Стиль для валидного поля ввода*/
+.valid_style {
+  background-color: green;
+}
+
+/*Стиль для отмеченных в чекбоксах задач*/
+.checkedItem {
+  background-color: #888 !important;
+  color: rgb(189, 219, 21);
+  text-decoration: line-through;
+}
