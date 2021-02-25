@@ -10,7 +10,7 @@
 
 "use strict";
 /*Регулярное выражение для ввода данных*/
-const myRegExp = /[\w\d\.:\?\&\!\ \,\ -\%\*\(\)]{6,40}/;
+const myRegExp = /^[\w\d\.:\?\&\!\ \,\ -\%\*\(\)]{6,40}$/;
 /*Поиск на странице поля ввода, кнопок и списка задач*/
 const userTaskInput = document.querySelector('input[name="task"]');
 const createTaskButton = document.getElementById("createTaskButton");
